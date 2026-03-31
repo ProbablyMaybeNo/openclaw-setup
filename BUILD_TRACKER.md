@@ -16,9 +16,9 @@
 ---
 
 ## Current Status
-**Active Phase:** Phase 4 complete — Moving to Phase 11 (Dashboards)
-**Next Step:** 11.1 — Access Official Control UI at http://127.0.0.1:18789 and verify
-**Blocker:** None
+**Active Phase:** Phase 11 complete — Moving to Phase 6 (Identity Files)
+**Next Step:** 6.1 — Create SOUL.md with user (requires user input/approval)
+**Blocker:** User input required for SOUL.md, AGENTS.md, HEARTBEAT.md content
 
 ---
 
@@ -96,11 +96,11 @@
 - [✅] 10.2 — Daily usage report cron (8am daily, isolated, qwen2.5:7b, announces to Telegram)
 - [ ] 10.3 — Weekly memory pruning cron (deferred — needs agents configured first)
 
-### PHASE 11 — Dashboards
-- [ ] 11.1 — Official Control UI accessible + device pairing working (NEEDS USER)
-- [ ] 11.2 — TenacitOS installed and running
-- [ ] 11.3 — VidClaw installed and running
-- [ ] 11.4 — ClawBridge installed and running (optional mobile)
+### PHASE 11 — Dashboards ✅ COMPLETE
+- [✅] 11.1 — Official Control UI accessible at http://127.0.0.1:18789 (Tailscale: http://100.90.26.40:18789)
+- [✅] 11.2 — TenacitOS running as systemd user service on port 3001 (password: OpenClaw2026!)
+- [✅] 11.3 — VidClaw running as systemd user service on port 3333
+- [✅] 11.4 — ClawBridge running as systemd service on port 3000 (Access Key: c9a096bf7e57adef79a5b2c69c9da59a)
 
 ### PHASE 12 — Security Hardening ✅ PARTIAL
 - [✅] 12.1 — Gateway confirmed loopback-only (127.0.0.1) — confirmed in config
