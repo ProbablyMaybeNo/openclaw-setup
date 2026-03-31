@@ -1,0 +1,40 @@
+# Credentials — NEVER commit
+.credentials_reference
+*.env
+.env*
+*.env.local
+
+# Data and outputs
+data/
+logs/
+exports/
+
+# Dashboard dependencies
+dashboards/*/node_modules/
+dashboards/*/.next/
+
+# Setup scripts (contain tokens)
+setup_config.sh
+setup_mcp_cron.sh
+setup_cron.sh
+
+# Node
+node_modules/
+
+# Temp files
+*.tmp
+*.log
+*.bak
+*.zip
+
+# OpenClaw runtime config (contains auth tokens)
+.openclaw/
+
+# OpenClaw workspace .md files — managed separately
+SOUL.md
+AGENTS.md
+HEARTBEAT.md
+BOOTSTRAP.md
+IDENTITY.md
+TOOLS.md
+USER.md
