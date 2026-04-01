@@ -1,0 +1,12 @@
+{
+  "lastChecks": {
+    "heartbeat": 1775023200,
+    "gateway": 1775023200,
+    "cron": 1775023200
+  },
+  "lastIssues": {
+    "ollama_auth": "No API key configured for ollama provider in isolated cron sessions. Heartbeat cron falls back to anthropic/claude-sonnet-4-6.",
+    "config_warning": "agents.defaults.memorySearch has unrecognized keys (endpoint, agents) - config reload skipped once but recovered.",
+    "anthropic_overloaded": "2026-03-31T23:00:21 - Anthropic returned overloaded_error during last heartbeat cron run (run id 9fd8065b)"
+  }
+}

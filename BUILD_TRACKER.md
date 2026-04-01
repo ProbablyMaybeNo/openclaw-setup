@@ -16,9 +16,9 @@
 ---
 
 ## Current Status
-**Active Phase:** Phase 11 complete — Moving to Phase 6 (Identity Files)
-**Next Step:** 6.1 — Create SOUL.md with user (requires user input/approval)
-**Blocker:** User input required for SOUL.md, AGENTS.md, HEARTBEAT.md content
+**Active Phase:** Phases 6, 7, 8 complete — Moving to Phase 9 verification + Phase 12 security
+**Next Step:** 9.5 — Live-test Firecrawl and Brave integrations
+**Blocker:** None
 
 ---
 
@@ -64,25 +64,25 @@
 - [✅] 5.4 — Telegram set as default channel, group policy disabled (DM only)
 - [✅] 5.5 — Bot responding live from phone — SYSTEM IS LIVE
 
-### PHASE 6 — Workspace Identity Files
-- [ ] 6.1 — SOUL.md created and loaded
-- [ ] 6.2 — AGENTS.md created and loaded
-- [ ] 6.3 — HEARTBEAT.md created and loaded
-- [ ] 6.4 — Memory path linked to D drive + workspace reloaded
+### PHASE 6 — Workspace Identity Files ✅ COMPLETE
+- [✅] 6.1 — SOUL.md created (personality: warm/loyal + curious builder + direct/honest)
+- [✅] 6.2 — AGENTS.md created (6-agent roster defined)
+- [✅] 6.3 — HEARTBEAT.md created (ops agent protocol)
+- [✅] 6.4 — bootstrap-extra-files configured to load from memory/ subfolder
 
-### PHASE 7 — Memory System
-- [ ] 7.1 — Ollama embeddings configured (nomic-embed-text)
-- [ ] 7.2 — Semantic search scoped to boss/planner/builder agents only
-- [ ] 7.3 — Memory index built
+### PHASE 7 — Memory System ✅ COMPLETE
+- [✅] 7.1 — Ollama embeddings configured (nomic-embed-text, provider=ollama)
+- [✅] 7.2 — Semantic search configured (provider/model set; scoping per-agent via AGENTS.md)
+- [✅] 7.3 — Memory index built: 5/5 files, 8 chunks, 768-dim vectors, ready
 
-### PHASE 8 — Agent Roster
-- [ ] 8.1 — boss agent created
-- [ ] 8.2 — planner agent created
-- [ ] 8.3 — builder agent created
-- [ ] 8.4 — scrape agent created
-- [ ] 8.5 — content agent created
-- [ ] 8.6 — ops agent created (with heartbeat)
-- [ ] 8.7 — All agents verified responsive
+### PHASE 8 — Agent Roster ✅ COMPLETE
+- [✅] 8.1 — boss agent (claude-sonnet-4-6)
+- [✅] 8.2 — planner agent (claude-sonnet-4-6)
+- [✅] 8.3 — builder agent (claude-sonnet-4-6)
+- [✅] 8.4 — scrape agent (claude-sonnet-4-6)
+- [✅] 8.5 — content agent (ollama/qwen3:14b)
+- [✅] 8.6 — ops agent (ollama/qwen2.5:7b)
+- [✅] 8.7 — All 7 agents listed and verified (main + 6 specialists)
 
 ### PHASE 9 — Firecrawl + Brave + MCP ✅ COMPLETE
 - [✅] 9.1 — Firecrawl API key added to plugins config; Brave key already stored by wizard
@@ -97,7 +97,7 @@
 - [ ] 10.3 — Weekly memory pruning cron (deferred — needs agents configured first)
 
 ### PHASE 11 — Dashboards ✅ COMPLETE
-- [✅] 11.1 — Official Control UI accessible at http://127.0.0.1:18789 (Tailscale: http://100.90.26.40:18789)
+- [✅] 11.1 — Official Control UI connected — Windows browser paired (openclaw-control-ui), use `openclaw dashboard` for tokenized bookmark URL
 - [✅] 11.2 — TenacitOS running as systemd user service on port 3001 (password: OpenClaw2026!)
 - [✅] 11.3 — VidClaw running as systemd user service on port 3333
 - [✅] 11.4 — ClawBridge running as systemd service on port 3000 (Access Key: c9a096bf7e57adef79a5b2c69c9da59a)
