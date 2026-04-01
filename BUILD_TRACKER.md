@@ -16,9 +16,17 @@
 ---
 
 ## Current Status
-**Active Phase:** All phases complete — baseline stable
-**Next Step:** Dashboard launcher UI + COMMANDS.md cheatsheet, then profit workflows
+**Active Phase:** Baseline complete and stable
+**Next Step:** COMMANDS.md cheatsheet, then profit workflows
 **Blocker:** None
+
+## Model Config (final)
+- Primary: openai-codex/gpt-5.4 (OAuth, no per-token cost)
+- Fallback 1: anthropic/claude-sonnet-4-6
+- Fallback 2: anthropic/claude-opus-4-6
+- Cron/ops: ollama/qwen2.5:7b (local, free)
+- Content: ollama/qwen3:14b (local, free)
+- Note: $3 Anthropic spend caused by 23 heartbeat runs falling back to Claude Sonnet before Ollama auth was configured. Fixed 2026-04-01.
 
 ---
 
